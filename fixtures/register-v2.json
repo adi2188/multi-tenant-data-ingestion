@@ -1,0 +1,7 @@
+{
+  "customer_id": "acme",
+  "dataset_id": "orders",
+  "version": 2,
+  "message_type": "customer.Order",
+  "descriptor_set": "CoQBCgxvcmRlcnMucHJvdG8SCGN1c3RvbWVyImoKBU9yZGVyEhkKCG9yZGVyX2lkGAEgAigJUgdvcmRlcklkEhYKBmFtb3VudBgCIAIoAVIGYW1vdW50EhoKCGN1cnJlbmN5GAMgASgJUghjdXJyZW5jeRISCgRub3RlGAQgASgJUgRub3Rl"
+}

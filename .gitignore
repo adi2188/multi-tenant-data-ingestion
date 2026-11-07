@@ -1,0 +1,34 @@
+# Reproducible build output and downloaded development tools
+/target/
+/.tools/
+/.m2/
+
+# Local service data, SQLite journals and database ownership locks
+/data/
+*.db
+*.db-*
+*.db.lock
+*.sqlite
+*.sqlite-*
+*.sqlite.lock
+*.sqlite3
+*.sqlite3-*
+*.sqlite3.lock
+
+# Local environment, logs and temporary files
+.env
+.env.*
+!.env.example
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+__pycache__/
+
+# Editor and OS metadata
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

@@ -1,0 +1,14 @@
+{
+  "customer_id": "acme",
+  "dataset_id": "orders",
+  "batch_id": "mixed-001",
+  "records": [
+    {"record_id": "valid-v1", "schema_version": 1, "payload": {"order_id": "o-1", "amount": 42.5, "currency": "USD"}},
+    {"record_id": "valid-v2", "schema_version": 2, "payload": {"order_id": "o-2", "amount": 0, "note": "New optional field"}},
+    {"record_id": "old-schema-extra-field", "schema_version": 1, "payload": {"order_id": "o-3", "amount": 12.5, "note": "Not in v1"}},
+    {"record_id": "incorrect-type", "schema_version": 2, "payload": {"order_id": "o-4", "amount": true}},
+    {"record_id": "null-value", "schema_version": 2, "payload": {"order_id": "o-5", "amount": null}},
+    {"record_id": "unknown-version", "schema_version": 99, "payload": {"order_id": "o-6", "amount": 1}},
+    {"payload": {"order_id": "o-7", "amount": 1}, "schema_version": 1}
+  ]
+}

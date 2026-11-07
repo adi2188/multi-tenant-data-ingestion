@@ -1,0 +1,9 @@
+syntax = "proto2";
+package customer;
+
+message Order {
+  required string order_id = 1;
+  required double amount = 2;
+  optional string currency = 3;
+  optional string note = 4;
+}

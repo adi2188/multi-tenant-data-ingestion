@@ -1,0 +1,36 @@
+Mixed batch: total=7 successful=2 failed=5; retry returned identical report.
+[ {
+  "position" : 2,
+  "category" : "validation",
+  "code" : "unknown_field",
+  "reason" : "Undeclared field: note",
+  "record_id" : "old-schema-extra-field"
+}, {
+  "position" : 3,
+  "category" : "validation",
+  "code" : "incorrect_type",
+  "reason" : "Incorrect DOUBLE value: amount",
+  "record_id" : "incorrect-type"
+}, {
+  "position" : 4,
+  "category" : "validation",
+  "code" : "null_value",
+  "reason" : "Explicit null is forbidden: amount",
+  "record_id" : "null-value"
+}, {
+  "position" : 5,
+  "category" : "validation",
+  "code" : "unknown_schema",
+  "reason" : "Unknown dataset or schema version 99",
+  "record_id" : "unknown-version"
+}, {
+  "position" : 6,
+  "category" : "validation",
+  "code" : "invalid_structure",
+  "reason" : "Expected exactly these fields: [payload, record_id, schema_version]"
+} ]
+Storage faults: recover succeeded on attempt 3; exhaust failed after 3; after succeeded.
+Isolation: A=100 records, 25 ms delay/write; B=1 record, 0 ms delay/write.
+A acknowledgment=7.4 ms; B completed in 3.5 ms after B submission; A status then=processing.
+A completed in 2906.8 ms after A submission. All assertions passed.
+Demo database: /Users/adityakulkarni/workspace/multi-tenant-data-platform/target/demo-1523736325696226736/records.sqlite3
